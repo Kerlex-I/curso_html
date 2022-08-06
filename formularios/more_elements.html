@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Más elementos</title>
+</head>
+
+<!-- 
+    fielset -> se usa para agrupar ciertas etiquetas y que sea mas entendible tanto para el usuario como para el navegador
+
+    legend -> sirve para darle un "nombre" a ese grupo
+
+    meter -> representa un valor dentro de un rango conocido
+
+    progress -> representa el progreso de una tarea
+
+    textarea -> es un campo de texto
+
+    type file -> es un tipo de input que sirve para subir un archivo
+ -->
+<body>
+    <form >
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos laborales</legend>
+            <div>
+                <label for="work">Empresas en las que ha trabajado</label>
+                <input type="text" name="word" id="work">
+            </div>
+            <div>
+                <label for="study">Estudios completados</label>
+                <input type="text" name="study" id="study">
+            </div>
+        </fieldset>
+       <!--  <input type="file"> -->
+       <label for="fuel">Gasolina</label>
+       <meter id="fuel" min="0" max="100" value="50" low="20" high="75" optimum="50">
+        
+       </meter>
+
+       <label for="task">Tarea 1</label>
+       <progress id="task" max="100" value="80"></progress>
+
+       <div>
+           <label for="message">Mensaje</label>
+           <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estructura básica de un formulario</title>
+</head>
+<!-- 
+    La estructura básica de un formulario se compone de 4 elementos
+
+        form -> es la etiqueta que engloba nuestro formulario
+
+        label -> sirve para escribir el nombre del campo a rellenar. Debe tener el atributo for al cual se le indica un id que emparejará el label con su input correspondiente
+
+        input -> sirve para crear un campo que permitirá al usuario interactuar
+
+        button -> crea un botón que permitirá enviar el formulario
+
+    input types:
+
+        button -> crea un boton que funcionará con JavaScript
+
+        submit -> crea un boton para enviar el formulario
+    
+    Fechas:
+
+        date -> se usa para introducir una fecha
+
+        time -> para colocar una hora
+
+        datetime-local -> fecha y hora, no funciona en firefox
+
+        month -> para introducir un mes
+
+        week -> para introducir una semana
+    
+    
+        search -> para las barras de busqueda
+
+        tel -> para introducir numeros telefonicos
+
+        email -> para introducir un correo
+
+        password -> para introducir una contraseña
+
+        url -> poner una url
+        
+
+        color -> elegir un color
+
+        number -> introducir un numero
+
+        reset -> resetear los valores del formulario
+
+    (se puede poner el input en el mismo bloque del label)
+ -->
+<body>
+
+    <form>
+        <div>
+            <label for="name">Nombre</label>
+            <input id="name">
+            <button>Enviar formulario</button>
+        </div>
+        <div>
+            <input type="text">
+            <input type="submit" value="Enviar input">
+            <button>Enviar</button>
+        </div>    
+        <div>
+            <input type="date">
+            <input type="time">
+            <!--  <input type="datetime-local"> -->
+            <input type="local"> <!-- No se usa para nada -->
+            <input type="month">
+            <input type="week">
+        </div>    
+           
+        <div>
+            <label> search
+                <input type="search">
+            </label>
+        </div>
+        <div>
+            <label>teléfono
+                <input type="tel">
+            </label>
+        </div>
+        <div>
+            <label>email
+                <input type="email">
+            </label>
+        </div>
+        <div>
+            <label>password
+                <input type="password">
+            </label>
+        </div>
+        <div>
+            <label>url
+                <input type="url">
+            </label>
+        </div>
+
+        <div>
+            <input type="color">
+            <input type="number">
+            <input type="range" step="2" min="0" max="20">
+            <input type="reset">
+            <input type="text">
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>DATOS DE ENTREGA</legend>
+            <div>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required autofocus>
+                <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido" required>
+            </div>
+            <div>
+                <input type="number" name="code" id="code" placeholder="Codigo postal" required>
+            </div>
+            <fieldset>
+                <legend>Direccion</legend>
+                <div>
+                    <input type="text" name="street" id="street" placeholder="Calle" required>
+                </div>
+                <div>
+                    <input type="number" name="numberext" id="ne" placeholder="Número Exterior" required>
+                    <input type="number" name="numberint" id="ni" placeholder="Número interior">
+                </div>
+                <div>
+                    <input type="text" name="info" id="info" placeholder="Información adicional">
+                </div>
+            </fieldset>
+            <div>
+                <input type="text" name="colonia" id="colonia" placeholder="Barrio" required>
+            </div>
+            <div>
+                <input type="text" name="city" id="city" placeholder="Ciudad" required>
+            </div>
+            <div>
+                <input type="text" list="state" placeholder="Estado" required>
+                <datalist id="state">
+                    <option value="Antioquia"></option>
+                    <option value="Arauca"></option>
+                    <option value="Atlántico"></option>
+                    <option value="Bogotá"></option>
+                    <option value="Boyacá"></option>
+                    <option value="Caquetá"></option>
+                    <option value="Casanare"></option>
+                    <option value="Cesar"></option>
+                    <option value="Chocó"></option>
+                    <option value="Guainía"></option>
+                    <option value="Guaviare"></option>
+                    <option value="Huila"></option>
+                    <option value="Magdalena"></option>
+                    <option value="Meta"></option>
+                    <option value="Putumayo"></option>
+                    <option value="Quindío"></option>
+                    <option value="Risaralda"></option>
+                    <option value="San Andrés y Providencia"></option>
+                    <option value="Santander"></option>
+                    <option value="Sucre"></option>
+                    <option value="Tolima"></option>
+                    <option value="Valle del Cauca"></option>
+                    <option value="Vaupés"></option>
+                    <option value="Vichada"></option>
+                </datalist>
+            </div>
+            <div>
+                <button>Enviar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
